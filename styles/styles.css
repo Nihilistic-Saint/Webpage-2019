@@ -1,0 +1,420 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+html,
+body {
+    background-color: #1a1a1a;
+    margin: 0 auto;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+h1 {
+    color: #f2f2f2;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    font-size: 350%;
+    padding: 0px;
+    margin: 0px;
+}
+h2{
+    color: #ff6600;
+}
+h3{
+    display: inline;
+}
+p{
+    font-size: 120%;
+    padding: 10px 0 20px;
+    color: #f2f2f2;
+    font-family: "Monsterrat", sans-serif;
+}
+#homeinfo {
+    font-size: 175%;
+    font-family: sans-serif;
+    word-spacing: 1px;
+    margin: 0px;
+    padding: 1em 1em 1em 0;
+}
+#first {
+    padding: 0em;
+    height: 83vh;
+    margin-top: 15vh;
+}
+.content-first{
+    width: auto;
+    height: 70vh;
+}
+.text {
+    display: block;
+    color: #f2f2f2;
+    width: auto;
+    height: auto;
+    padding: 5em 10% 0 19%;
+    float: left;
+    width: 44em;
+}
+/*  Flip card start*/
+.flip-card {
+    background-color: transparent;
+    width: 334px;
+    height: 471px;
+    perspective: 1000px;
+    padding: 0 0em 2em 0;
+    margin: 0 0 0;
+    float: left;
+}
+.flip-card-inner {
+    position: relative;
+    width: 334px;
+    height: 471px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 0px 59px 0px 59px;
+    border: 7px solid #ff6600;
+}
+.flip-card-back {
+    background-color: #262626;
+    color: white;
+    transform: rotateY(180deg);
+    width: 334px;
+    height: 471px;
+    border-radius: 50px 0px 50px 0px;
+    border: 7px solid #ff6600;
+}
+.flip-h1 {
+    color: #ff6600;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+.flip-p {
+    word-spacing: 12px;
+    margin-top: 15px;
+    font-size: 120%;
+    padding: 15px 0px 15px 25px;
+    color: #f2f2f2;
+    display: inline;
+    text-align: right;
+}
+.cardalign{text-align: left;padding: 0px 0px 0px 2em;line-height: 2.75}
+/*  Flip card end   */
+
+/* About starts */
+#content {
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    font-size: 120%;
+    font-family: sans-serif
+}
+.h2{padding: 1em 0 0.1em 0;}
+#content_left,
+#content_right {
+    height: 39.5em;
+    border-radius: 25px;
+    border: 5px solid #ff6600;
+    text-align: center;
+    padding: 1.5%;
+    background-color: #262626;
+    overflow: auto;
+    margin: 3%;
+    position: static;
+    width: 41%;
+}
+#content_left {
+    float: left;
+}
+#content_right {
+    float: right;
+    margin-left: 1.5%;
+}
+#intererst{padding-bottom: 0px;margin-bottom: 0px;}
+/* About ends */
+
+/*  Nav bar start   */
+nav .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background-color: #0d0d0d;
+    width: 100%;
+    height: 10vh;
+}
+ul {
+    text-align: center;
+}
+li {
+    display: inline-block;
+    margin: 0 1.5em;
+}
+nav li {
+    font-size: 12pt;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+}
+nav li a {
+    color: transparent;
+    font-size: 22pt;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    width: auto;
+}
+nav li i {
+    color: #ff6600;
+    align-content: center;
+    margin: 0em;
+}
+nav li b {
+    display: none;
+}
+nav a:hover {
+    color: #ff6600;
+    transition: 0.1s;
+    display: block;
+}
+nav a:hover i {
+    display: none;
+    transition: 1s;
+}
+nav a:hover b {
+    display: block;
+    transition: 0.5s;
+}
+li b:hover {
+    text-align: center;
+}
+/*  Nav bar end   */
+
+/*  skills start   */
+#third {
+    padding: 9vh 0 0 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+}
+#skillp{
+    font-size: 175%;
+    font-family: sans-serif;
+    word-spacing: 1px;
+    margin: 0px;
+    padding: 1em 1em 1em 0;
+}
+.skill-levels{
+    position: relative;
+    width: 65vw;
+    padding-bottom: 10px;
+    margin-bottom: 110px;
+}
+#skilltop{padding-top: 1em;}
+.skill-levels h2{
+    color: #ff6600;
+    padding: 3em 0 0.5em 0;
+}
+.skill-levels .skills{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#616161 0%, #333 10%, #222);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+}
+.skill-levels .skills:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255,255,255,.1);
+}
+.skill-levels .skills .name{
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.skill-levels .skills .value{
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.skill-levels .skills .percent{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 20px;
+    margin:  0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden; 
+}
+.skill-levels .skills .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards; 
+}
+@keyframes animate{
+    from{
+        width: 0;
+    }
+}
+.container .skills:nth-child(3) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.container .skills:nth-child(4) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.container .skills:nth-child(5) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.container .skills:nth-child(7) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.container .skills:nth-child(8) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.container .skills:nth-child(9) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.container .skills:nth-child(11) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.container .skills:nth-child(12) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.container .skills:nth-child(13) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.container .skills:nth-child(14) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+/*  skills end   */
+
+/*  footer start   */
+.container {
+    min-height: 100%;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+#footer {
+    background-color: #0d0d0d;
+    position: relative;
+    height: 55px;
+    margin-top: -15px;
+    clear: both;
+    padding: 50px 0px;
+}
+.footer-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-icons .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-icons .list .f-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 0px 25px;
+    border-radius: 100%;
+    background: #4d4d4d;
+}
+.footer-icons .list .f-icon a{
+    color: #ff6600;
+    font-size: 15px;
+}
+.footer-icons .list .f-icon a i{
+    line-height: 45px;
+ } 
+.footer-menu{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 17px;
+}
+.footer-menu .list{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu .list .list-text{
+    display: inline-block;
+    margin: 0px 15px;
+    padding-left: 5px
+}
+.footer-menu .list .list-text a{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-menu2{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer-menu2 .list{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu2 .list .list-text{
+    display: inline-block;
+    margin: 0px 15px;
+}
+.footer-menu2 .list .list-text a{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*  footer end   */

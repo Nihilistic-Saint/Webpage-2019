@@ -1,1 +1,1 @@
-# Webpage-2019
+# This is a school project related to my HTML course. The assignment was to create a website that can be used as your portfolio.

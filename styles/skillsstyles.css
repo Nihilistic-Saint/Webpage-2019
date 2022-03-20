@@ -1,0 +1,294 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #1a1a1a;
+    margin: 0 auto;
+    height: 100%;
+    font-family: montserrat;
+}
+
+footer {
+    height: 20;
+    color: #0d0d0d;
+}
+
+/*  Nav bar starts   */
+nav .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background-color: #0d0d0d;
+    width: 100%;
+    height: 10vh;
+}
+ul {
+    text-align: center;
+}
+li {
+    display: inline-block;
+    margin: 0 1.5em;
+}
+nav li {
+    font-size: 12pt;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+    background-color: ;
+}
+nav li a {
+    color: transparent;
+    font-size: 22pt;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    width: auto;
+}
+nav li i {
+    color: #fdb510;
+    align-content: center;
+    margin: 0em;
+}
+nav li b {
+    display: none;
+}
+nav a:hover {
+    color: #fdb510;
+    transition: 0.1s;
+    display: block;
+}
+nav a:hover i {
+    display: none;
+    transition: 1s;
+}
+nav a:hover b {
+    display: block;
+    transition: 0.5s;
+}
+li b:hover {
+    text-align: center;
+}
+nav .home {
+    float: left;
+}
+/*  Nav bar end   */
+#filler {
+    display: block;
+    height: 5vh;
+}
+.skill-levels{
+    position: relative;
+    width: 55vw;
+    padding-bottom: 100px;
+    margin-bottom: 110px;
+}
+.skill-levels h2{
+    color: #fdb510;
+}
+.skill-levels .skills{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#616161 0%, #333 10%, #222);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+}
+.skill-levels .skills:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255,255,255,.1);
+}
+.skill-levels .skills .name{
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.skill-levels .skills .value{
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.skill-levels .skills .percent{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 20px;
+    margin:  0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden; 
+}
+.skill-levels .skills .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+    
+}
+@keyframes animate{
+    from{
+        width: 0;
+    }
+}
+.container .skills:nth-child(3) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.container .skills:nth-child(4) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.container .skills:nth-child(5) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.container .skills:nth-child(7) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.container .skills:nth-child(8) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.container .skills:nth-child(9) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.container .skills:nth-child(11) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.container .skills:nth-child(12) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.container .skills:nth-child(13) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.container .skills:nth-child(14) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+section {
+    padding: 0em;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    /* width: 70vw; */
+    /* overflow: hidden; */
+}
+
+p {
+    font-size: 170%;
+    padding: 25px 0;
+    color: #f2f2f2;
+    
+}
+
+/*  footer start   */
+.container {
+    min-height: 100%;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+#footer {
+    background-color: #0d0d0d;
+    position: relative;
+    height: 199px;
+    margin-top: -105px;
+    clear: both;
+    padding: 50px 0px;
+}
+.footer-icons {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-icons .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-icons .list .f-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 0px 25px;
+    border-radius: 100%;
+    background: #4d4d4d;
+}
+.footer-icons .list .f-icon a {
+    color: #fdb510;
+    font-size: 15px;
+}
+.footer-icons .list .f-icon a i {
+    line-height: 45px;
+    margin-top: ;
+}
+
+.footer-menu {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 17px;
+}
+.footer-menu .list {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu .list .list-text {
+    display: inline-block;
+    margin: 0px 15px;
+    padding-left: 5px;
+}
+.footer-menu .list .list-text a {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-menu2 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer-menu2 .list {
+    margin: 0px;
+    padding: 0 0 30px;
+    text-align: center;
+}
+.footer-menu2 .list .list-text {
+    display: inline-block;
+    margin: 0px 15px;
+}
+.footer-menu2 .list .list-text a {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*  footer end   */
